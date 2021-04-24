@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.zulfa.uts_18090053">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="false"
+        android:icon="@mipmap/ic_launcher"
+        android:label="18090053"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true"
+        tools:targetApi="m">
+        <activity
+            android:name="com.zulfa.uts_18090053.activity._main.Splasschreen"
+            android:theme="@style/Theme.AppCompat.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.zulfa.uts_18090053.activity.report.ReportActivity"></activity>
+        <activity android:name="com.zulfa.uts_18090053.activity.penjualan.PenjualanBarang" />
+        <activity android:name="com.zulfa.uts_18090053.activity.data_barang.DataBarangActivity" />
+        <activity android:name="com.zulfa.uts_18090053.activity.register.RegisterActivity" />
+        <activity android:name="com.zulfa.uts_18090053.activity.data_barang._add.AddBarangActivity" />
+        <activity android:name="com.zulfa.uts_18090053.activity.login.LoginActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.zulfa.uts_18090053.activity._main.MainActivity" />
+    </application>
+
+</manifest>
